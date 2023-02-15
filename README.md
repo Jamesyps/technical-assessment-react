@@ -1,5 +1,7 @@
 # Technical Task Assessment
 
+[![Code Quality](https://github.com/Jamesyps/technical-assessment-react/actions/workflows/code-quality.yml/badge.svg)](https://github.com/Jamesyps/technical-assessment-react/actions/workflows/code-quality.yml)
+
 ## Getting Started
 
 ### Requirements
