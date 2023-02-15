@@ -1,3 +1,28 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": [
+    "simple-import-sort",
+    "sonarjs",
+    "woke",
+    "promise"
+  ],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:sonarjs/recommended",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": "error",
+    "semi-style": ["error", "last"],
+    "no-useless-catch": "error",
+    "@next/next/no-img-element": "off",
+    "react/prop-types": "error",
+    "react/react-in-jsx-scope": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "woke/all": "warn",
+    "promise/prefer-await-to-callbacks": "error"
+  }
 }
