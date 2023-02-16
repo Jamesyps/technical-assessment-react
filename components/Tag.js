@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 
 const Tag = ({ label, value, variant = 'blue' }) => {
+  // A limitation of tailwind is that you cannot do interpolated names
+  // due to the JIT compilation (so no bg-${variant}-800).
+  //
+  // This may be where css-in-js or styled components have an advantage.
   const variants = {
     blue: {
       'bg-light': 'bg-blue-100',

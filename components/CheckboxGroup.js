@@ -10,6 +10,7 @@ const CheckboxGroup = ({ name, label, options, value = [], onChange, searchable 
 
   const isChecked = useCallback((optVal) => checked.includes(optVal), [checked]);
 
+  // Prevent unnecessary iterations on the options array when the component renders
   const processedOptions = useMemo(() => {
     return options
       .filter((option) => {

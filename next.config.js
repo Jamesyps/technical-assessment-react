@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  serverRuntimeConfig: {
+    queryParamsAllowList: ['page', 'manufacturer', 'type', 'model'],
+  },
   images: {
     remotePatterns: [
       {
